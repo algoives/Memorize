@@ -21,14 +21,13 @@ struct MemoryGameView: View {
                             .aspectRatio(2/3, contentMode: .fit)
                             .onTapGesture {
                                 viewModel.choose(card)
-                            }
-                        
                     }
-                       
                 }
+                       
             }
-          .foregroundColor(.red)
-          .padding(.horizontal)
+    }
+        .foregroundColor(.blue)
+        .padding(.horizontal)
         
     }
  }
@@ -61,7 +60,7 @@ struct CardView: View {
 
 
 
-struct ContentView_Previews: PreviewProvider {
+struct MemoryGameView_Previews: PreviewProvider {
     static var previews: some View {
         let game = EmojiMemoryGame()
         
