@@ -21,14 +21,13 @@ struct MemoryGameView: View {
                             .aspectRatio(2/3, contentMode: .fit)
                             .onTapGesture {
                                 viewModel.choose(card)
-                            }
-                        
                     }
-                       
                 }
+                       
             }
-            .foregroundColor(.blue)
-          .padding(.horizontal)
+    }
+        .foregroundColor(.blue)
+        .padding(.horizontal)
         
     }
  }
